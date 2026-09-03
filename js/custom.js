@@ -668,7 +668,7 @@ All JavaScript fuctions Start
 
 	// > page loader function by = custom.js ========================= //		
 		function page_loader() {
-			$('.loading-area').fadeOut(3000);
+			// Managed by video completion in moto-slider.js
 		}
 
 	/*--------------------------------------------------------------------------------------------

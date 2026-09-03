@@ -4504,8 +4504,12 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 999999;
   overflow: hidden;
+  background-color: #000106;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .loading-area .loading-box {
   width: 100%;
@@ -4515,19 +4519,25 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   left: 0;
   top: 0;
   opacity: 1;
-  z-index: 9999;
+  z-index: 1;
 }
 .loading-area .loading-pic {
   width: 100%;
-  position: absolute;
-  top: 50%;
-  z-index: 99999;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  transform: translateY(-50%);
 }
 .loading-area .loading-pic .loader-gif {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  object-fit: contain;
+  object-position: center;
 }
 
 /*______Section Overlay______*/

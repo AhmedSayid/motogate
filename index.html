@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css">
     <!-- DATETIMEPICKER STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/style.css"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/moto-slider.css"><!-- HERO MOTO SLIDER -->
     <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css"><!-- CUSTOM SCROLLBAR -->
 
 </head>
@@ -38,10 +39,17 @@
 <body>
 
     <!-- LOADING AREA START ===== -->
-        <div class="loading-area">
+    <div class="loading-area">
         <div class="loading-box"></div>
         <div class="loading-pic">
-            <img class="loader-gif" src="images/Intro.gif" alt="loader Image">
+            <video class="loader-video" autoplay muted playsinline>
+                <source src="images/Intro-mobile.mp4" type="video/mp4" media="(max-width: 768px)">
+                <source src="images/Intro.mp4" type="video/mp4">
+                <picture>
+                    <source srcset="images/Intro-mobile.gif" media="(max-width: 768px)">
+                    <img class="loader-gif" src="images/Intro.gif" alt="loader Image">
+                </picture>
+            </video>
         </div>
     </div>
     <!-- LOADING AREA  END ====== -->
@@ -433,41 +441,70 @@
                                                                             <div class="input-group date datepicker">
                                                                                 <input class="form-control"
                                                                                     placeholder="المقدم">
-
                                                                             </div>
-
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                             <div class="twm-tabs-search-btn">
                                                                 <a href="cars-grid-4.html" class="site-button">
                                                                     <em>Find A vehicle</em>
                                                                 </a>
                                                             </div>
                                                         </form>
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="twm-banner-right">
-                            <div class="twm-banner-right-section">
-                                <div class="twm-banner-r-content">
-                                    <div class="twm-banner-r-bx">
-                                        <h1 class="twm-bnr-title" style="text-align: center;"> TX 250</h1>
+                            <div class="twm-banner-right-section" id="twmMotoSlider">
+                                <!-- Slide 1: TX 250 -->
+                                <div class="twm-moto-slide active">
+                                    <div class="twm-banner-r-content">
+                                        <div class="twm-banner-r-bx">
+                                            <h1 class="twm-bnr-title" style="text-align: center;"> TX 250</h1>
+                                        </div>
+                                    </div>
+                                    <div class="twm-banner-media mb-5">
+                                        <img style="width: auto;" src="images/TX250.png" alt="TX 250">
                                     </div>
                                 </div>
-                                <div class="twm-banner-media mb-5">
-                                    <img style="width: auto;"  src="images/TX250.png" alt="Car Pic">
+                                <!-- Slide 2: KTX 250 -->
+                                <div class="twm-moto-slide">
+                                    <div class="twm-banner-r-content">
+                                        <div class="twm-banner-r-bx">
+                                            <h1 class="twm-bnr-title" style="text-align: center;"> KTX 250</h1>
+                                        </div>
+                                    </div>
+                                    <div class="twm-banner-media mb-5">
+                                        <img style="width: auto;" src="images/KTX.png" alt="KTX 250">
+                                    </div>
+                                </div>
+                                <!-- Slide 3: TX 250 Blue -->
+                                <div class="twm-moto-slide">
+                                    <div class="twm-banner-r-content">
+                                        <div class="twm-banner-r-bx">
+                                            <h1 class="twm-bnr-title" style="text-align: center;"> TX 250</h1>
+                                        </div>
+                                    </div>
+                                    <div class="twm-banner-media mb-5">
+                                        <img style="width: auto;" src="images/TX250-blue.png" alt="TX 250">
+                                    </div>
+                                </div>
+                                <!-- Slide 4: TX 250 Red -->
+                                <div class="twm-moto-slide">
+                                    <div class="twm-banner-r-content">
+                                        <div class="twm-banner-r-bx">
+                                            <h1 class="twm-bnr-title" style="text-align: center;"> TX 250</h1>
+                                        </div>
+                                    </div>
+                                    <div class="twm-banner-media mb-5">
+                                        <img style="width: auto;" src="images/TX250-red.png" alt="TX 250">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -475,7 +512,6 @@
                 </div>
             </div>
             <!--BANNER END-->
-
             <!--WIDE RANGE SECTION START-->
         <!--     <div  class="section-full p-t150 p-b120 site-bg-white twm-w-range-section-wrap wow fadeInDown"
                 data-wow-offset="100" data-wow-delay="0.2">
@@ -1937,6 +1973,7 @@
     <script src="js/moment.min.js"></script><!-- REQUIRE FOR BOOTSTRAP DATETIMEPICKER -->
     <script src="js/bootstrap-datetimepicker.min.js"></script><!-- BOOTSTRAP DATETIMEPICKER -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script><!-- CUSTOM SCROLLBAR JS -->
+    <script src="js/moto-slider.js"></script><!-- HERO MOTO SLIDER JS -->
 
 </body>
 
